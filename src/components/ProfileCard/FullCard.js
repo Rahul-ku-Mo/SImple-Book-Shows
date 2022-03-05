@@ -49,8 +49,8 @@ const FullCard = ({
           </Box>
           <Text value={`Status: ${mStat}`} />
           <Text value={`Releasing date: ${mPre.slice(0,4)}`} />
-          <Text value={`Scheduled on: ${mSch}`} />
-          <Text value={`Average Runtime: ${mRun}`} />
+          <Text value={mSch !== null ? `Scheduled on: ${mSch}` : `Not Scheduled Yet`}/>
+          <Text value={`Average Runtime: ${mRun} mins`} />
 
           <Box>
             <div className="font-serif text-lg" dangerouslySetInnerHTML={{ __html: `${mSum}` }} />

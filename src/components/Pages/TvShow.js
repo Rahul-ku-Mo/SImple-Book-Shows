@@ -29,7 +29,7 @@ const TvShow = ({ movies }) => {
             />
             {show && (
               <div>
-                <BookingForm stat={setShow} />
+                <BookingForm stat={setShow} movieName={mov.show.name} />
               </div>
             )}
           </div>

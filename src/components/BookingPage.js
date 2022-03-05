@@ -1,7 +1,7 @@
 import { Box, Container } from "@mui/material";
 import { React, useState } from "react";
 
-const BookingForm = ({ stat }) => {
+const BookingForm = ({ stat , movieName }) => {
   const [name, setName] = useState("");
   const [tkt, setTkt] = useState("");
 
@@ -24,7 +24,7 @@ const BookingForm = ({ stat }) => {
         sx={{ border: "2px solid black ", padding: "1rem", marginTop: "10px" }}
       >
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <div className="font-serif "> Booking</div>
+          <div className="font-serif ">{`Are you sure you want to Book tickets for ${movieName}`}</div>
           <div
             className="font-serif cursor-pointer"
             onClick={() => {
